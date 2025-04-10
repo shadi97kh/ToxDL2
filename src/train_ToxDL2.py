@@ -3,6 +3,9 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.optim import lr_scheduler
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")
 from utils import pytorch_model_store, data_loader_result_write, evaluation_result_obtained
 from parameters.test_000 import DATA, model_best_save_path, test_predicted_save_path, independent_predicted_save_path
 from parameters.test_000 import learning_rate, epochs, device, gamma, step_size
